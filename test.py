@@ -1,11 +1,10 @@
 import requests
 from datetime import datetime
-
-tz_info = {'BD': 'Asia/Dhaka'}
-
+from pytz import timezone
+BD=timezone('Asia/Dhaka')
 
 def call_pylenin(event=None, context=None):
-    tm1 = datetime.now().strftime("%H:%M:%S")
+    tm1 = datetime.now(BD).strftime("%H:%M:%S")
     txt1 = 'ada reach system'
     url1 = 'https://api.mobireach.com.bd/SendTextMessage?Username=shagor&Password=Sh@g0R21AdmiN&From=adareach&To=8801833182268&Message=' + tm1 + ' ' + txt1 + ' OK'
     r1 = requests.get(url1)
@@ -17,10 +16,7 @@ def call_pylenin(event=None, context=None):
                 'http://45.249.101.2/boomcast/WebFramework/boomCastWebService/externalApiSendSMSMobiReach?masking=EBL.&userName=robimobireach&password=ec9fdbc5aa84840418b1a5c315655835&MsgType=UNICODE&receiver=8801515694060&message=' + tm2 + ' ' + txt2 + ' OK')
     r2 = requests.get(url2)
     boomcast = r2.status_code
-    # result:{
-    #     'mobireach':mobireach,
-    #     'boomcast':boomcast
-    # }
+
 
     return mobireach, boomcast
 
