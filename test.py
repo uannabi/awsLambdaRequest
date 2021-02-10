@@ -6,7 +6,7 @@ BD=timezone('Asia/Dhaka')
 def call_pylenin(event=None, context=None):
     tm1 = datetime.now(BD).strftime("%H:%M:%S")
     txt1 = 'ada reach system'
-    url1 = 'https://api.mobireach.com.bd/SendTextMessage?Username=shagor&Password=Sh@g0R21AdmiN&From=adareach&To=8801833182268&Message=' + tm1 + ' ' + txt1 + ' OK'
+    url1 = 'https://api.mobireach.com.bd/SendTextMessage?Username=shagor&Password=Sh@g0R21AdmiN&From=adareach&To=8801833182268&message=' + tm1 + ' ' + txt1 + ' OK'
     r1 = requests.get(url1)
     mobireach = r1.status_code
 
