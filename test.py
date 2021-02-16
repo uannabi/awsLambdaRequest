@@ -19,6 +19,4 @@ def call_pylenin(event=None, context=None):
 
 
     return mobireach,boomcast
-
-# 8801717502174
 print(call_pylenin())
