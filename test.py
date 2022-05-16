@@ -14,10 +14,10 @@ def call_pylenin(event=None, context=None):
     tm4 = datetime.now(BD).strftime("%H:%M:%S")
     musking = 'Smart.Lab'
     txt1 = 'CES SMS System'
-    url1 = 'https://api.mobireach.com.bd/SendTextMessage?Username=shagor&Password=m@MeN@07aDmIn&From=' + musking + '&To=8801553084509&Message=' + tm1 + ' ' + txt1 + ' OK'
-    url2 = 'https://api.mobireach.com.bd/SendTextMessage?Username=shagor&Password=m@MeN@07aDmIn&From=' + musking + '&To=8801825295827&Message=' + tm2 + ' ' + txt1 + ' OK'
-    url3 = 'https://api.mobireach.com.bd/SendTextMessage?Username=shagor&Password=m@MeN@07aDmIn&From=' + musking + '&To=8801938388871&Message=' + tm3 + ' ' + txt1 + ' OK'
-    url4 = 'https://api.mobireach.com.bd/SendTextMessage?Username=shagor&Password=m@MeN@07aDmIn&From=' + musking + '&To=8801717502174&Message=' + tm4 + ' ' + txt1 + ' OK'
+    url1 = 'https://api.mobireach.com.bd/SendTextMessage?Username=shagor&Password=M0MeN@@7ADm1N&From=' + musking + '&To=8801553084509&Message=' + tm1 + ' ' + txt1 + ' OK'
+    url2 = 'https://api.mobireach.com.bd/SendTextMessage?Username=shagor&Password=M0MeN@@7ADm1N&From=' + musking + '&To=8801825295827&Message=' + tm2 + ' ' + txt1 + ' OK'
+    url3 = 'https://api.mobireach.com.bd/SendTextMessage?Username=shagor&Password=M0MeN@@7ADm1N&From=' + musking + '&To=8801938388871&Message=' + tm3 + ' ' + txt1 + ' OK'
+    url4 = 'https://api.mobireach.com.bd/SendTextMessage?Username=shagor&Password=M0MeN@@7ADm1N&From=' + musking + '&To=8801717502174&Message=' + tm4 + ' ' + txt1 + ' OK'
     r1 = requests.get(url1)
     mobireach09 = r1.status_code
     r2 = requests.get(url2)
